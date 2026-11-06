@@ -1,0 +1,106 @@
+{
+  "meta": {
+    "n_images": 303,
+    "detection_rate": 0.9603960396039604,
+    "split": {
+      "train": 212,
+      "val": 45,
+      "test": 46
+    },
+    "seed": 42,
+    "img_size": 128,
+    "classes": [
+      "peace",
+      "stop",
+      "thumbs_up"
+    ]
+  },
+  "clean": {
+    "baseline_full": {
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "confusion": [
+        [
+          15,
+          0,
+          0
+        ],
+        [
+          0,
+          15,
+          0
+        ],
+        [
+          0,
+          0,
+          16
+        ]
+      ]
+    },
+    "sota_crop": {
+      "accuracy": 0.9782608695652174,
+      "precision": 0.9803921568627452,
+      "recall": 0.9777777777777779,
+      "f1": 0.9784047370254267,
+      "confusion": [
+        [
+          15,
+          0,
+          0
+        ],
+        [
+          0,
+          14,
+          1
+        ],
+        [
+          0,
+          0,
+          16
+        ]
+      ]
+    },
+    "ablation_crop_noaug": {
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    }
+  },
+  "stress": {
+    "bg_color": {
+      "baseline_full_acc": 0.9782608695652174,
+      "sota_crop_acc": 0.9782608695652174
+    },
+    "bg_noise": {
+      "baseline_full_acc": 1.0,
+      "sota_crop_acc": 0.9782608695652174
+    },
+    "bg_image": {
+      "baseline_full_acc": 0.9782608695652174,
+      "sota_crop_acc": 0.9782608695652174
+    },
+    "photometric": {
+      "baseline_full_acc": 1.0,
+      "sota_crop_acc": 1.0
+    },
+    "hand_hidden": {
+      "baseline_full_acc": 0.5217391304347826,
+      "sota_crop_acc": 0.32608695652173914
+    }
+  },
+  "latency": {
+    "baseline_full": {
+      "classifier_ms": 91.37408137321472,
+      "classifier_fps": 10.94402247301978
+    },
+    "sota_crop_end_to_end": {
+      "classifier_ms": 88.47866654396057,
+      "classifier_fps": 11.302159481609621,
+      "end_to_end_ms": 134.88803505897522,
+      "end_to_end_fps": 7.41355598784417
+    }
+  }
+}

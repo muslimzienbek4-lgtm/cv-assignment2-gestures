@@ -1,0 +1,216 @@
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1793982278.585091   30368 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1793982281.378115   30368 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+WARNING: Logging before InitGoogle() is written to STDERR
+W0000 00:00:1793982283.209270   35328 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1793982283.219549   35328 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1793982283.326919   19104 landmark_projection_calculator.cc:81] Using NORM_RECT without IMAGE_DIMENSIONS is only supported for the square ROI. Provide IMAGE_DIMENSIONS or use PROJECTION_MATRIX.
+I0000 00:00:1793982332.237319   30368 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE3 SSE4.1 SSE4.2 AVX AVX2 AVX_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING:tensorflow:TensorFlow GPU support is not available on native Windows for TensorFlow >= 2.11. Even if CUDA/cuDNN are installed, GPU will not be used. Please use WSL2 or the TensorFlow-DirectML plugin.
+[data] loaded 303 images; MediaPipe detection rate = 96.0%
+[split] train=212 val=45 test=46
+
+=== Training BASELINE (full image) ===
+Epoch 1/15
+14/14 - 6s - 456ms/step - accuracy: 0.4151 - loss: 1.2956 - val_accuracy: 0.5111 - val_loss: 0.8891
+Epoch 2/15
+14/14 - 4s - 271ms/step - accuracy: 0.7170 - loss: 0.6244 - val_accuracy: 0.7778 - val_loss: 0.5494
+Epoch 3/15
+14/14 - 1s - 100ms/step - accuracy: 0.8679 - loss: 0.4195 - val_accuracy: 0.8222 - val_loss: 0.3728
+Epoch 4/15
+14/14 - 2s - 119ms/step - accuracy: 0.9198 - loss: 0.2815 - val_accuracy: 0.9111 - val_loss: 0.2808
+Epoch 5/15
+14/14 - 2s - 113ms/step - accuracy: 0.9198 - loss: 0.2428 - val_accuracy: 0.9556 - val_loss: 0.2181
+Epoch 6/15
+14/14 - 2s - 113ms/step - accuracy: 0.9434 - loss: 0.1681 - val_accuracy: 0.9333 - val_loss: 0.1975
+Epoch 7/15
+14/14 - 2s - 108ms/step - accuracy: 0.9575 - loss: 0.1562 - val_accuracy: 0.9778 - val_loss: 0.1571
+Epoch 8/15
+14/14 - 2s - 122ms/step - accuracy: 0.9528 - loss: 0.1475 - val_accuracy: 0.9333 - val_loss: 0.1664
+Epoch 9/15
+14/14 - 3s - 238ms/step - accuracy: 0.9764 - loss: 0.1165 - val_accuracy: 0.9333 - val_loss: 0.1340
+Epoch 10/15
+14/14 - 3s - 216ms/step - accuracy: 0.9764 - loss: 0.1079 - val_accuracy: 0.9556 - val_loss: 0.1418
+Epoch 11/15
+14/14 - 4s - 295ms/step - accuracy: 0.9623 - loss: 0.1067 - val_accuracy: 0.9556 - val_loss: 0.1178
+Epoch 12/15
+14/14 - 3s - 200ms/step - accuracy: 0.9764 - loss: 0.0894 - val_accuracy: 0.9333 - val_loss: 0.1197
+Epoch 13/15
+14/14 - 3s - 229ms/step - accuracy: 0.9811 - loss: 0.0778 - val_accuracy: 0.9778 - val_loss: 0.0965
+Epoch 14/15
+14/14 - 2s - 126ms/step - accuracy: 0.9858 - loss: 0.0617 - val_accuracy: 0.9556 - val_loss: 0.0974
+Epoch 15/15
+14/14 - 1s - 106ms/step - accuracy: 0.9811 - loss: 0.0670 - val_accuracy: 0.9556 - val_loss: 0.1075
+Epoch 16/30
+14/14 - 10s - 697ms/step - accuracy: 0.8349 - loss: 0.3632 - val_accuracy: 0.9778 - val_loss: 0.0846
+Epoch 17/30
+14/14 - 2s - 139ms/step - accuracy: 0.8915 - loss: 0.3036 - val_accuracy: 0.9778 - val_loss: 0.0746
+Epoch 18/30
+14/14 - 2s - 147ms/step - accuracy: 0.8868 - loss: 0.2846 - val_accuracy: 0.9778 - val_loss: 0.0669
+Epoch 19/30
+14/14 - 4s - 289ms/step - accuracy: 0.9151 - loss: 0.2264 - val_accuracy: 0.9778 - val_loss: 0.0610
+Epoch 20/30
+14/14 - 4s - 292ms/step - accuracy: 0.9340 - loss: 0.1928 - val_accuracy: 0.9778 - val_loss: 0.0574
+Epoch 21/30
+14/14 - 5s - 341ms/step - accuracy: 0.9481 - loss: 0.1467 - val_accuracy: 0.9778 - val_loss: 0.0537
+Epoch 22/30
+14/14 - 5s - 341ms/step - accuracy: 0.9575 - loss: 0.1506 - val_accuracy: 0.9778 - val_loss: 0.0503
+Epoch 23/30
+14/14 - 5s - 379ms/step - accuracy: 0.9717 - loss: 0.1171 - val_accuracy: 0.9778 - val_loss: 0.0476
+Epoch 24/30
+14/14 - 4s - 276ms/step - accuracy: 0.9481 - loss: 0.1364 - val_accuracy: 1.0000 - val_loss: 0.0449
+Epoch 25/30
+14/14 - 5s - 340ms/step - accuracy: 0.9575 - loss: 0.1252 - val_accuracy: 1.0000 - val_loss: 0.0424
+Epoch 26/30
+14/14 - 4s - 308ms/step - accuracy: 0.9906 - loss: 0.1047 - val_accuracy: 1.0000 - val_loss: 0.0405
+Epoch 27/30
+14/14 - 4s - 292ms/step - accuracy: 0.9717 - loss: 0.1160 - val_accuracy: 0.9778 - val_loss: 0.0398
+Epoch 28/30
+14/14 - 4s - 272ms/step - accuracy: 0.9670 - loss: 0.1157 - val_accuracy: 0.9778 - val_loss: 0.0384
+Epoch 29/30
+14/14 - 4s - 257ms/step - accuracy: 0.9717 - loss: 0.1125 - val_accuracy: 0.9778 - val_loss: 0.0370
+Epoch 30/30
+14/14 - 4s - 274ms/step - accuracy: 0.9717 - loss: 0.0873 - val_accuracy: 1.0000 - val_loss: 0.0362
+
+=== Training SOTA (MediaPipe crop) ===
+Epoch 1/15
+14/14 - 17s - 1s/step - accuracy: 0.5047 - loss: 1.1319 - val_accuracy: 0.8000 - val_loss: 0.5459
+Epoch 2/15
+14/14 - 6s - 395ms/step - accuracy: 0.7972 - loss: 0.5355 - val_accuracy: 0.9333 - val_loss: 0.2884
+Epoch 3/15
+14/14 - 2s - 156ms/step - accuracy: 0.9057 - loss: 0.2844 - val_accuracy: 0.9556 - val_loss: 0.1986
+Epoch 4/15
+14/14 - 3s - 238ms/step - accuracy: 0.9198 - loss: 0.1969 - val_accuracy: 0.9556 - val_loss: 0.1547
+Epoch 5/15
+14/14 - 4s - 272ms/step - accuracy: 0.9717 - loss: 0.1440 - val_accuracy: 0.9778 - val_loss: 0.1267
+Epoch 6/15
+14/14 - 2s - 164ms/step - accuracy: 0.9528 - loss: 0.1709 - val_accuracy: 0.9778 - val_loss: 0.1100
+Epoch 7/15
+14/14 - 2s - 162ms/step - accuracy: 0.9623 - loss: 0.1182 - val_accuracy: 0.9778 - val_loss: 0.0875
+Epoch 8/15
+14/14 - 3s - 199ms/step - accuracy: 0.9811 - loss: 0.0969 - val_accuracy: 0.9778 - val_loss: 0.0976
+Epoch 9/15
+14/14 - 4s - 311ms/step - accuracy: 0.9764 - loss: 0.0792 - val_accuracy: 0.9778 - val_loss: 0.0922
+Epoch 10/15
+14/14 - 2s - 159ms/step - accuracy: 0.9623 - loss: 0.1106 - val_accuracy: 0.9778 - val_loss: 0.0740
+Epoch 11/15
+14/14 - 2s - 169ms/step - accuracy: 0.9858 - loss: 0.0786 - val_accuracy: 0.9778 - val_loss: 0.0900
+Epoch 12/15
+14/14 - 2s - 167ms/step - accuracy: 0.9858 - loss: 0.0771 - val_accuracy: 0.9778 - val_loss: 0.0738
+Epoch 13/15
+14/14 - 2s - 162ms/step - accuracy: 0.9764 - loss: 0.0845 - val_accuracy: 0.9778 - val_loss: 0.0673
+Epoch 14/15
+14/14 - 3s - 213ms/step - accuracy: 0.9858 - loss: 0.0704 - val_accuracy: 0.9778 - val_loss: 0.0607
+Epoch 15/15
+14/14 - 2s - 137ms/step - accuracy: 0.9858 - loss: 0.0563 - val_accuracy: 0.9778 - val_loss: 0.0682
+Epoch 16/30
+14/14 - 27s - 2s/step - accuracy: 0.9009 - loss: 0.2408 - val_accuracy: 0.9778 - val_loss: 0.0511
+Epoch 17/30
+14/14 - 3s - 230ms/step - accuracy: 0.9434 - loss: 0.1830 - val_accuracy: 0.9778 - val_loss: 0.0457
+Epoch 18/30
+14/14 - 3s - 212ms/step - accuracy: 0.9434 - loss: 0.1985 - val_accuracy: 0.9778 - val_loss: 0.0404
+Epoch 19/30
+14/14 - 4s - 290ms/step - accuracy: 0.9481 - loss: 0.1533 - val_accuracy: 0.9778 - val_loss: 0.0359
+Epoch 20/30
+14/14 - 4s - 284ms/step - accuracy: 0.9481 - loss: 0.1524 - val_accuracy: 0.9778 - val_loss: 0.0315
+Epoch 21/30
+14/14 - 4s - 277ms/step - accuracy: 0.9670 - loss: 0.1079 - val_accuracy: 1.0000 - val_loss: 0.0285
+Epoch 22/30
+14/14 - 4s - 302ms/step - accuracy: 0.9717 - loss: 0.1005 - val_accuracy: 1.0000 - val_loss: 0.0251
+Epoch 23/30
+14/14 - 3s - 248ms/step - accuracy: 0.9670 - loss: 0.0925 - val_accuracy: 1.0000 - val_loss: 0.0227
+Epoch 24/30
+14/14 - 5s - 340ms/step - accuracy: 0.9858 - loss: 0.0831 - val_accuracy: 1.0000 - val_loss: 0.0209
+Epoch 25/30
+14/14 - 4s - 292ms/step - accuracy: 0.9811 - loss: 0.0845 - val_accuracy: 1.0000 - val_loss: 0.0195
+Epoch 26/30
+14/14 - 4s - 273ms/step - accuracy: 0.9858 - loss: 0.0762 - val_accuracy: 1.0000 - val_loss: 0.0182
+Epoch 27/30
+14/14 - 4s - 263ms/step - accuracy: 0.9906 - loss: 0.0787 - val_accuracy: 1.0000 - val_loss: 0.0169
+Epoch 28/30
+14/14 - 4s - 271ms/step - accuracy: 0.9717 - loss: 0.0793 - val_accuracy: 1.0000 - val_loss: 0.0156
+Epoch 29/30
+14/14 - 5s - 355ms/step - accuracy: 0.9906 - loss: 0.0599 - val_accuracy: 1.0000 - val_loss: 0.0144
+Epoch 30/30
+14/14 - 4s - 275ms/step - accuracy: 0.9953 - loss: 0.0690 - val_accuracy: 1.0000 - val_loss: 0.0135
+
+=== Ablation: crop WITHOUT augmentation ===
+Epoch 1/15
+14/14 - 14s - 997ms/step - accuracy: 0.5000 - loss: 1.1287 - val_accuracy: 0.9111 - val_loss: 0.3809
+Epoch 2/15
+14/14 - 2s - 167ms/step - accuracy: 0.8726 - loss: 0.3611 - val_accuracy: 0.9778 - val_loss: 0.1430
+Epoch 3/15
+14/14 - 2s - 175ms/step - accuracy: 0.9528 - loss: 0.1657 - val_accuracy: 1.0000 - val_loss: 0.0792
+Epoch 4/15
+14/14 - 3s - 200ms/step - accuracy: 0.9670 - loss: 0.1097 - val_accuracy: 1.0000 - val_loss: 0.0530
+Epoch 5/15
+14/14 - 3s - 194ms/step - accuracy: 0.9858 - loss: 0.0833 - val_accuracy: 1.0000 - val_loss: 0.0425
+Epoch 6/15
+14/14 - 3s - 214ms/step - accuracy: 0.9906 - loss: 0.0515 - val_accuracy: 1.0000 - val_loss: 0.0329
+Epoch 7/15
+14/14 - 5s - 352ms/step - accuracy: 0.9906 - loss: 0.0541 - val_accuracy: 1.0000 - val_loss: 0.0295
+Epoch 8/15
+14/14 - 5s - 371ms/step - accuracy: 0.9906 - loss: 0.0500 - val_accuracy: 1.0000 - val_loss: 0.0241
+Epoch 9/15
+14/14 - 2s - 168ms/step - accuracy: 1.0000 - loss: 0.0297 - val_accuracy: 1.0000 - val_loss: 0.0206
+Epoch 10/15
+14/14 - 3s - 184ms/step - accuracy: 1.0000 - loss: 0.0302 - val_accuracy: 1.0000 - val_loss: 0.0187
+Epoch 11/15
+14/14 - 3s - 199ms/step - accuracy: 1.0000 - loss: 0.0208 - val_accuracy: 1.0000 - val_loss: 0.0175
+Epoch 12/15
+14/14 - 3s - 218ms/step - accuracy: 1.0000 - loss: 0.0197 - val_accuracy: 1.0000 - val_loss: 0.0172
+Epoch 13/15
+14/14 - 5s - 353ms/step - accuracy: 1.0000 - loss: 0.0168 - val_accuracy: 1.0000 - val_loss: 0.0145
+Epoch 14/15
+14/14 - 3s - 208ms/step - accuracy: 1.0000 - loss: 0.0189 - val_accuracy: 1.0000 - val_loss: 0.0147
+Epoch 15/15
+14/14 - 4s - 302ms/step - accuracy: 1.0000 - loss: 0.0172 - val_accuracy: 1.0000 - val_loss: 0.0154
+Epoch 16/30
+14/14 - 11s - 753ms/step - accuracy: 0.8585 - loss: 0.3272 - val_accuracy: 1.0000 - val_loss: 0.0113
+Epoch 17/30
+14/14 - 2s - 136ms/step - accuracy: 0.9292 - loss: 0.2216 - val_accuracy: 1.0000 - val_loss: 0.0094
+Epoch 18/30
+14/14 - 2s - 139ms/step - accuracy: 0.9811 - loss: 0.1117 - val_accuracy: 1.0000 - val_loss: 0.0083
+Epoch 19/30
+14/14 - 2s - 137ms/step - accuracy: 0.9858 - loss: 0.0832 - val_accuracy: 1.0000 - val_loss: 0.0074
+Epoch 20/30
+14/14 - 2s - 140ms/step - accuracy: 0.9906 - loss: 0.0610 - val_accuracy: 1.0000 - val_loss: 0.0067
+Epoch 21/30
+14/14 - 2s - 143ms/step - accuracy: 1.0000 - loss: 0.0449 - val_accuracy: 1.0000 - val_loss: 0.0062
+Epoch 22/30
+14/14 - 2s - 130ms/step - accuracy: 0.9953 - loss: 0.0371 - val_accuracy: 1.0000 - val_loss: 0.0058
+Epoch 23/30
+14/14 - 2s - 147ms/step - accuracy: 1.0000 - loss: 0.0358 - val_accuracy: 1.0000 - val_loss: 0.0054
+Epoch 24/30
+14/14 - 2s - 142ms/step - accuracy: 1.0000 - loss: 0.0220 - val_accuracy: 1.0000 - val_loss: 0.0050
+Epoch 25/30
+14/14 - 2s - 154ms/step - accuracy: 1.0000 - loss: 0.0216 - val_accuracy: 1.0000 - val_loss: 0.0047
+Epoch 26/30
+14/14 - 2s - 138ms/step - accuracy: 1.0000 - loss: 0.0215 - val_accuracy: 1.0000 - val_loss: 0.0044
+Epoch 27/30
+14/14 - 2s - 142ms/step - accuracy: 1.0000 - loss: 0.0202 - val_accuracy: 1.0000 - val_loss: 0.0042
+Epoch 28/30
+14/14 - 2s - 132ms/step - accuracy: 1.0000 - loss: 0.0147 - val_accuracy: 1.0000 - val_loss: 0.0041
+Epoch 29/30
+14/14 - 2s - 143ms/step - accuracy: 1.0000 - loss: 0.0154 - val_accuracy: 1.0000 - val_loss: 0.0039
+Epoch 30/30
+14/14 - 2s - 141ms/step - accuracy: 1.0000 - loss: 0.0126 - val_accuracy: 1.0000 - val_loss: 0.0037
+WARNING:tensorflow:5 out of the last 5 calls to <function TensorFlowTrainer.make_predict_function.<locals>.one_step_on_data_distributed at 0x0000021700837100> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+WARNING:tensorflow:6 out of the last 6 calls to <function TensorFlowTrainer.make_predict_function.<locals>.one_step_on_data_distributed at 0x0000021700837100> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+W0000 00:00:1793982712.318630    3052 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1793982712.328955    3052 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+
+=== Stress test: background randomization ===
+
+=== Grad-CAM ===
+
+=== Latency ===
+
+[done] results written to results
+{
+  "clean": 1.0,
+  "sota": 0.9782608695652174
+}
