@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Trained models / caches (reproduce via the notebook or pipeline.py)
+*.keras
+*.h5
+results/_cache.npz
+hand_landmarker.task
+
+# Dataset (add your own ASSIGNMENT1CV/ or link it in the README)
+ASSIGNMENT1CV/
+
+# Scratch
+report/_draft_test.pdf
+.DS_Store

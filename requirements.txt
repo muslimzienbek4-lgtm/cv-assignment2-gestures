@@ -1,0 +1,7 @@
+tensorflow>=2.15
+mediapipe>=0.10
+opencv-contrib-python
+scikit-learn
+matplotlib
+numpy
+gradio
